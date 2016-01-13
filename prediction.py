@@ -30,7 +30,8 @@ for one in cluster:
   times = []
   while i < 10:
    rand = random.randint(0,500)
-   in_train,in_test,out_train,out_test = cross_validation.train_test_split(data[:,1:],data[:,0],test_size=0.02,random_state=rand)
+   in_train,in_test,out_train,out_test = cross_validation.train_test_split(data[:,1:],data[:,0],test_size=0.02,
+   	random_state=rand)
   #Fit model
   #i = 300
   #times = []
