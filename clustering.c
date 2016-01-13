@@ -32,7 +32,8 @@ void rev2cl(char* rev,char* dict[],int loc[],int cl[])//transform a review into 
 		//get the word one by one till the last
 		word = getword(t);
 		wordlen = strlen(word);
-		//check if the word is in word base dict: if yes, add 1 to the corresponding location vector(loc+1);if not, skip
+		//check if the word is in word base dict: if yes, add 1 to the corresponding location vector(loc+1);if not, 
+		//skip
 		for(i = 0; i < MAX_WORD; i++)
 		{ 
 			if(strcmp(dict[i],word) == 0){
